@@ -41,6 +41,9 @@ public class PlayerMovementTutorial : MonoBehaviour
         rb.freezeRotation = true;
 
         readyToJump = true;
+
+        orientation = GameObject.Find("Main Camera").transform;
+
     }
 
     private void Update()
