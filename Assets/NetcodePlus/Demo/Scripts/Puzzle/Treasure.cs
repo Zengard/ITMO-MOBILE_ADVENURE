@@ -21,6 +21,7 @@ namespace NetcodePlus.Demo
 
         private void OnTriggerEnter(Collider other)
         {
+            GAManager.instance.OnLevelComplite(1);
             PuzzleGame.Get().WinGame();
         }
     }

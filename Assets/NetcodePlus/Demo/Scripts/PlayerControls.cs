@@ -80,7 +80,7 @@ namespace NetcodePlus.Demo
             if (Input.GetKey(cam_rotate_right))
                 rotate_cam += 1f;
 
-            if (Input.GetKeyDown(action_key))
+            if (Input.GetKeyDown(action_key) || SimpleInput.GetButton("UIJump"))
                 press_action = true;
             if (Input.GetKeyDown(attack_key))
                 press_attack = true;
@@ -94,7 +94,10 @@ namespace NetcodePlus.Demo
             if (Input.GetKeyDown(menu_pause))
                 press_pause = true;
 
-            move = (arrows + wasd);
+            Vector2 joystic = new Vector2(SimpleInput.GetAxis("Horizontal"), SimpleInput.GetAxis("Vertical"));
+
+
+            move = (arrows + wasd + joystic);
             move = move.normalized * Mathf.Min(move.magnitude, 1f);
             mouse_scroll = Input.mouseScrollDelta.y;
         }

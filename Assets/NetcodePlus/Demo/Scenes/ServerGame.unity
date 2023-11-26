@@ -150,6 +150,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -181,55 +182,68 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6006020421513368025, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae, type: 3}
+    - target: {fileID: 6006020421513368025, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae,
+        type: 3}
       propertyPath: ConnectionData.ServerListenAddress
       value: 127.0.0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae, type: 3}
+    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae,
+        type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae, type: 3}
+    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae, type: 3}
+    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae,
+        type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae, type: 3}
+    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae,
+        type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae, type: 3}
+    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae,
+        type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae, type: 3}
+    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae, type: 3}
+    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae,
+        type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae, type: 3}
+    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae,
+        type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae, type: 3}
+    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae, type: 3}
+    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae, type: 3}
+    - target: {fileID: 8487147660888035126, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8487147660888035130, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae, type: 3}
+    - target: {fileID: 8487147660888035130, guid: 23c63cb4e422e0e4fb2a3e2f9f9559ae,
+        type: 3}
       propertyPath: m_Name
       value: TheNetworkDemo
       objectReference: {fileID: 0}

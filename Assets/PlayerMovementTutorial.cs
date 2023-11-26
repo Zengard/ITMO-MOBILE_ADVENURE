@@ -80,6 +80,15 @@ public class PlayerMovementTutorial : MonoBehaviour
 
             Invoke(nameof(ResetJump), jumpCooldown);
         }
+
+        if (SimpleInput.GetButton("UIJump") && readyToJump && grounded)
+        {
+            readyToJump = false;
+
+            Jump();
+
+            Invoke(nameof(ResetJump), jumpCooldown);
+        }
     }
 
     private void MovePlayer()

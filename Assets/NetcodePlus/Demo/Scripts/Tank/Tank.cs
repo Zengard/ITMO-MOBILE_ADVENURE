@@ -55,6 +55,10 @@ namespace NetcodePlus.Demo
 
         private static List<Tank> tank_list = new List<Tank>();
 
+        public AudioClip drive;
+        public AudioClip shootSound;
+        private AudioSource audioSource;
+
         protected override void Awake()
         {
             base.Awake();
@@ -70,6 +74,12 @@ namespace NetcodePlus.Demo
 
             Vector3 face = Vector3.zero - transf.position;
             transf.rotation = Quaternion.LookRotation(face.normalized, Vector3.up);
+
+            audioSource = GetComponent<AudioSource>();
+            audioSource.clip = drive;
+            audioSource.loop = true;
+            audioSource.Play();
+
         }
 
         protected override void OnDestroy()
@@ -277,6 +287,7 @@ namespace NetcodePlus.Demo
                 TankBullet bullet = bobj.GetComponent<TankBullet>();
                 bullet.direction = dir;
                 bullet.player_id = player_id;
+                audioSource.PlayOneShot(shootSound);
             }
         }
 

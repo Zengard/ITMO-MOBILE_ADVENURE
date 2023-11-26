@@ -18,6 +18,7 @@ namespace NetcodePlus.Demo
             Explorer explorer = other.GetComponent<Explorer>();
             if (explorer != null)
             {
+                GAManager.instance.OnLevelFail(1);
                 explorer.Kill();
             }
         }
