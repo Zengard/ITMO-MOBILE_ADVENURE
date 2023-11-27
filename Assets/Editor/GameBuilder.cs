@@ -12,7 +12,7 @@ public class GameBuilder : MonoBehaviour
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
         buildPlayerOptions.scenes = new[] { "Assets/NetcodePlus/Demo/Scenes/Menu.unity", "Assets/NetcodePlus/Demo/Scenes/MenuLobby.unity", "Assets/NetcodePlus/Demo/Scenes/ServerGame.unity",
         "Assets/NetcodePlus/Demo/Scenes/ServerLobby.unity", "Assets/NetcodePlus/Demo/Scenes/DemoPuzzle.unity", "Assets/NetcodePlus/Demo/Scenes/DemoTank.unity", "Assets/NetcodePlus/Demo/Scenes/DemoSimple.unity"};
-        buildPlayerOptions.locationPathName = "build/Test.apk";
+        buildPlayerOptions.locationPathName = "build/Android/Test.apk";
         buildPlayerOptions.target = BuildTarget.Android;
         buildPlayerOptions.options = BuildOptions.None;
             
