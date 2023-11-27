@@ -32,13 +32,13 @@ public class GameBuilder : MonoBehaviour
 
     }
 
-
+    [MenuItem("Build/Build Windows")]
     public static void PerformWondowsBuild()
     {
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
         buildPlayerOptions.scenes = new[] { "Assets/NetcodePlus/Demo/Scenes/Menu.unity", "Assets/NetcodePlus/Demo/Scenes/MenuLobby.unity", "Assets/NetcodePlus/Demo/Scenes/ServerGame.unity",
         "Assets/NetcodePlus/Demo/Scenes/ServerLobby.unity", "Assets/NetcodePlus/Demo/Scenes/DemoPuzzle.unity", "Assets/NetcodePlus/Demo/Scenes/DemoTank.unity", "Assets/NetcodePlus/Demo/Scenes/DemoSimple.unity"};
-        buildPlayerOptions.locationPathName = "build/Android/Test.exe";
+        buildPlayerOptions.locationPathName = "build/Windows/Test.exe";
         buildPlayerOptions.target = BuildTarget.StandaloneWindows;
         buildPlayerOptions.options = BuildOptions.None;
 
